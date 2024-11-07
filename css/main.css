@@ -409,11 +409,12 @@ input.search-form:hover {
   position: absolute;
   width: 100%;
   display: block !important;
-  height: 730px;
+  height: 350px;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
   transition: opacity ease-in-out 500ms;
+  /*! margin: 10px; */
 }
 
 #main-slider .carousel .item:first-child {
@@ -1101,6 +1102,7 @@ a.accordion-toggle  i{
   color:#fff;
   border: 1px solid #bfbfbf;
 }
+
 
 #carousel-slider 
 .carousel-control {

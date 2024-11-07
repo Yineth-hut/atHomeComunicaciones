@@ -75,6 +75,9 @@
                                 <li><a href="automatizacion.html">Automatización y Control</a></li>
                                 <li><a href="mantenimiento.html">Mantenimiento Tecnológico</a></li>
                                 <li><a href="internet.html">Servicio de Internet</a></li>
+                                <li>
+                                    <a download href="fonts/catalogo.pdf" target="_blank" >Brochure empresarial</a>
+                                </li>
                             </ul>
                         </li>
                         <li><a href="contacto.html">Contacto</a></li>                        
@@ -84,8 +87,53 @@
         </nav><!--/nav-->
 		
     </header><!--/header-->
+<!--
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide" id="carouselExample" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExample" data-slide-to="1"></li>
+                <li data-target="#carouselExample" data-slide-to="2"></li>
+            </ol>
+            
+    
+            <div class="carousel-controls text-center mt-3">
+                <a id="toggleCarousel">
+                    <img id="toggleImage" src="images/pausa.png" alt="Pausar" style="width: 29px; height: 29px;">
+                </a>
+            </div>
+            <div class="carousel-inner">
+                <div class="item active" style="background-image: url(images/xd.jpeg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(images/xd1.jpeg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(images/slider/bg3.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="prev hidden-xs" href="#carouselExample" data-slide="prev">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+            <a class="next hidden-xs" href="#carouselExample" data-slide="next">
+                <i class="fa fa-chevron-right"></i>
+            </a>
+    
+            
+        </div>
+    </section>--> SECCION carrusel
 
-   
+
     <section id="blog" class="container">
         <div class="center">
             <h2>ATHOME COMUNICACIONES S.A.S</h2>
@@ -307,5 +355,30 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+
+    
+    <!--/<script>  funcion js para activar y desactivar la ejecucióin del carrucel
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.querySelector('#carouselExample');
+        const toggleButton = document.querySelector('#toggleCarousel');
+        const toggleImage = document.querySelector('#toggleImage'); // Referencia a la imagen
+
+        let isPlaying = true; // Estado inicial del carrusel
+
+        toggleButton.addEventListener('click', function () {
+            if (isPlaying) {
+                $(carousel).carousel('pause'); // Detiene el carrusel
+                toggleImage.src = 'images/play.png'; // Cambia la imagen a "play"
+                toggleImage.alt = 'Reanudar'; // Cambia el texto alternativo
+            } else {
+                $(carousel).carousel('cycle'); // Reanuda el carrusel
+                toggleImage.src = 'images/pausa.png'; // Cambia la imagen a "pause"
+                toggleImage.alt = 'Pausar'; // Cambia el texto alternativo
+            }
+            isPlaying = !isPlaying; // Cambia el estado
+        });
+    });
+    </script>  -->
 </body>
 </html>
+
